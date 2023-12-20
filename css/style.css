@@ -9,7 +9,7 @@
   background: #e5e5e5;
 }
 
-.bg-main-top {
+.bg_main_top {
   background-color: #1b72e8;
 }
 
@@ -58,6 +58,7 @@
 
 #main {
   width: calc(100% - var(--left-nav-bar-width));
+  height: calc(100vh - var(--header-height));
 }
 
 /* MEDIA QUERY */
