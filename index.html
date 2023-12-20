@@ -117,35 +117,113 @@
     <!-- END HEADER -->
 
     <!-- MAIN -->
-    <!-- LEFT NAVBAR -->
-    <nav id="left-navbar" class="d-flex flex-column align-items-center py-4">
-      <!-- button home -->
-      <button class="btn btn-outline-light border-0 rounded-0 mb-3 p-1">
-        <i class="bi bi-house-door-fill fs-4 me-lg-3"></i>
-        <span class="d-none d-lg-inline-block">Home</span>
-      </button>
-      <!-- end button home -->
-      <!-- button stats -->
-      <button class="btn btn-outline-light border-0 rounded-0 mb-3 p-1">
-        <i class="fa-solid fa-chart-simple fs-4 me-lg-3"></i>
-        <span class="d-none d-lg-inline-block">Stats</span>
-      </button>
-      <!-- end button stats -->
-      <!-- button signals -->
-      <button class="btn btn-outline-light border-0 rounded-0 mb-3 p-1">
-        <i class="fa-solid fa-signal fs-5 me-lg-3"></i>
-        <span class="d-none d-lg-inline-block">Signal</span>
-      </button>
-      <!-- end button signal -->
-      <!-- button admin -->
-      <button class="btn btn-outline-light border-0 rounded-0 p-1 mt-auto">
-        <i class="bi bi-gear-fill fs-4 me-lg-3"></i>
-        <span class="d-none d-lg-inline-block">Admin</span>
-      </button>
-      <!-- end button admin -->
-    </nav>
+    <div class="container-fluid d-flex px-0">
+      <!-- LEFT NAVBAR -->
+      <nav id="left-navbar" class="d-flex flex-column align-items-center py-4">
+        <!-- button home -->
+        <button class="btn btn-outline-light border-0 rounded-0 mb-3 p-1">
+          <i class="bi bi-house-door-fill fs-4 me-lg-3"></i>
+          <span class="d-none d-lg-inline-block">Home</span>
+        </button>
+        <!-- end button home -->
+        <!-- button stats -->
+        <button class="btn btn-outline-light border-0 rounded-0 mb-3 p-1">
+          <i class="fa-solid fa-chart-simple fs-4 me-lg-3"></i>
+          <span class="d-none d-lg-inline-block">Stats</span>
+        </button>
+        <!-- end button stats -->
+        <!-- button signals -->
+        <button class="btn btn-outline-light border-0 rounded-0 mb-3 p-1">
+          <i class="fa-solid fa-signal fs-5 me-lg-3"></i>
+          <span class="d-none d-lg-inline-block">Signal</span>
+        </button>
+        <!-- end button signal -->
+        <!-- button admin -->
+        <button class="btn btn-outline-light border-0 rounded-0 p-1 mt-auto">
+          <i class="bi bi-gear-fill fs-4 me-lg-3"></i>
+          <span class="d-none d-lg-inline-block">Admin</span>
+        </button>
+        <!-- end button admin -->
+      </nav>
+      <!-- END LEFT NAVBAR -->
 
-    <!-- END LEFT NAVBAR -->
+      <!-- MAIN CONTENT -->
+      <main id="main">
+        <div class="bg-main-top container-fluid py-4 mb-4 text-light">
+          <!-- MAIN CONTENT TOP -->
+          <div class="container-fluid d-md-flex justify-content-between">
+            <!-- nuovo studente -->
+            <div class="new_student order-1 d-flex align-items-baseline mb-4">
+              <h2 class="fs-6 fw-semibold text-capitalize me-3">
+                nuovo studente
+              </h2>
+              <button class="btn btn-outline-light fs-4 py-0">+</button>
+            </div>
+            <!-- fine nuovo studente -->
+
+            <!-- Boolean -->
+            <div class="boolean mb-4">
+              <!-- boolean top -->
+              <div>
+                <h1 class="h2 d-inline-block">Boolean</h1>
+                <button
+                  type="button"
+                  class="btn btn_main_top_badge badge rounded-5"
+                >
+                  Piano blaze
+                </button>
+              </div>
+              <!-- end boolean top -->
+              <!-- boolean bottom -->
+              <button
+                type="button"
+                class="btn btn_main_top_badge badge rounded-5"
+              >
+                3 app
+              </button>
+              <i class="fa-solid fa-angles-right"></i>
+              <button
+                type="button"
+                class="btn btn_main_top_badge badge rounded-circle d-lg-none"
+              >
+                +
+              </button>
+              <button
+                type="button"
+                class="btn btn_main_top_badge badge rounded-5 d-none d-lg-inline-block"
+              >
+                Boolean mobile app
+              </button>
+              <button
+                type="button"
+                class="btn btn_main_top_badge badge rounded-5 d-none d-lg-inline-block"
+              >
+                Boolean web app
+              </button>
+              <button
+                type="button"
+                class="btn btn_main_top_badge badge rounded-5 d-none d-lg-inline-block"
+              >
+                Boolean blog app
+              </button>
+              <!-- end boolean bottom -->
+            </div>
+            <!-- fine Boolean -->
+
+            <!-- studenti online -->
+            <div class="online_student">
+              <span class="fw-semibold fs-5 fs-md-6"
+                >Studenti online negli ultimi 30 minuti</span
+              >
+              <span class="fw-semibold fs-2 fs-md-3 d-block">125</span>
+            </div>
+            <!-- fine studenti online -->
+          </div>
+          <!-- END MAIN CONTENT TOP -->
+        </div>
+      </main>
+      <!-- END MAIN CONTENT -->
+    </div>
     <!-- END MAIN -->
 
     <!-- Script Bootsrap -->

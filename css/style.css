@@ -1,11 +1,20 @@
 :root {
   --header-height: 62px;
   --left-nav-bar-bg: #10273d;
+  --left-nav-bar-width: 70px;
 }
 
 /* ## COLOR */
 .bg-secondary-custom {
   background: #e5e5e5;
+}
+
+.bg-main-top {
+  background-color: #1b72e8;
+}
+
+.btn_main_top_badge {
+  background-color: #165bba;
 }
 
 /* ## HEADER */
@@ -38,7 +47,7 @@
 /* ## MAIN */
 
 #left-navbar {
-  width: 70px;
+  width: var(--left-nav-bar-width);
   height: calc(100vh - var(--header-height));
 
   background-color: var(--left-nav-bar-bg);
@@ -47,10 +56,14 @@
   background-repeat: no-repeat;
 }
 
+#main {
+  width: calc(100% - var(--left-nav-bar-width));
+}
+
 /* MEDIA QUERY */
 
 @media screen and (min-width: 992px) {
-  #left-navbar {
-    width: 150px;
+  :root {
+    --left-nav-bar-width: 150px;
   }
 }
