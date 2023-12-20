@@ -1,9 +1,18 @@
+:root {
+  --header-height: 62px;
+  --left-nav-bar-bg: #10273d;
+}
+
 /* ## COLOR */
 .bg-secondary-custom {
   background: #e5e5e5;
 }
 
 /* ## HEADER */
+
+#header {
+  height: var(--header-height);
+}
 
 .header_logo_container {
   height: 50px;
@@ -24,4 +33,24 @@
 
 #header .form-control {
   padding-left: 2.375rem;
+}
+
+/* ## MAIN */
+
+#left-navbar {
+  width: 70px;
+  height: calc(100vh - var(--header-height));
+
+  background-color: var(--left-nav-bar-bg);
+  background-image: url(../img/sidebar-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 992px) {
+  #left-navbar {
+    width: 150px;
+  }
 }
