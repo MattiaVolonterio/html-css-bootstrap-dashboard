@@ -148,7 +148,7 @@
       <!-- END LEFT NAVBAR -->
 
       <!-- MAIN CONTENT -->
-      <main id="main" class="overflow-auto">
+      <main id="main" class="overflow-auto pb-5">
         <div class="bg_main_top container-fluid py-4 mb-4 text-light">
           <!-- MAIN CONTENT TOP -->
           <div class="container-fluid d-md-flex justify-content-between">
@@ -224,20 +224,334 @@
 
         <!-- MAIN CONTENT BOTTOM -->
         <div class="container-fluid">
-          <div class="row">
+          <div class="row g-3">
             <!-- col left -->
             <div class="col-12 col-lg-8">
               <!-- Prossime classi -->
               <div class="card mb-3">
                 <div class="card-header fs-4">Prossime Classi</div>
-                <div class="card-body"></div>
+                <div class="card-body">
+                  <table class="table">
+                    <!-- table head -->
+                    <thead>
+                      <tr>
+                        <td scope="col" class="w-50">Nome</td>
+                        <td
+                          scope="col"
+                          class="text-center d-none d-md-table-cell"
+                        >
+                          Data inizio
+                        </td>
+                        <td
+                          scope="col"
+                          class="text-center d-none d-sm-table-cell"
+                        >
+                          ROI
+                        </td>
+                        <td scope="col" class="text-center">Stato</td>
+                        <td scope="col" class="text-center">Azioni</td>
+                      </tr>
+                    </thead>
+                    <!-- end table head -->
+
+                    <!-- table body -->
+                    <tbody>
+                      <!-- Riga 1 -->
+                      <tr>
+                        <td scope="row d-flex align-items-center">
+                          <i
+                            class="bi bi-code-slash bg-danger rounded-circle fs-5 p-1 me-2 text-light"
+                          ></i>
+                          <span>Classe 75</span>
+                        </td>
+                        <td class="text-center d-none d-md-table-cell">
+                          15 Feb 2021
+                        </td>
+                        <td class="text-center d-none d-sm-table-cell">20%</td>
+                        <td class="text-center">
+                          <span class="badge text-bg-success">Done</span>
+                        </td>
+                        <td class="text-center">
+                          <button class="btn btn-outline-secondary px-2">
+                            <i class="bi bi-pencil-square"></i>
+                          </button>
+                          <button class="btn btn-outline-secondary px-2">
+                            <i class="bi bi-trash3-fill"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <!-- end riga 1 -->
+
+                      <!-- Riga 2 -->
+                      <tr>
+                        <td scope="row d-flex align-items-center">
+                          <i
+                            class="bi bi-code-slash bg-danger rounded-circle fs-5 p-1 me-2 text-light"
+                          ></i>
+                          <span>Classe 76</span>
+                        </td>
+                        <td class="text-center d-none d-md-table-cell">
+                          16 Feb 2021
+                        </td>
+                        <td class="text-center d-none d-sm-table-cell">20%</td>
+                        <td class="text-center">
+                          <span class="badge text-bg-success">Done</span>
+                        </td>
+                        <td class="text-center">
+                          <button class="btn btn-outline-secondary px-2">
+                            <i class="bi bi-pencil-square"></i>
+                          </button>
+                          <button class="btn btn-outline-secondary px-2">
+                            <i class="bi bi-trash3-fill"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <!-- end riga 2 -->
+
+                      <!-- Riga 3 -->
+                      <tr>
+                        <td scope="row d-flex align-items-center">
+                          <i
+                            class="bi bi-code-slash bg-danger rounded-circle fs-5 p-1 me-2 text-light"
+                          ></i>
+                          <span>Classe 77</span>
+                        </td>
+                        <td class="text-center d-none d-md-table-cell">
+                          17 Feb 2021
+                        </td>
+                        <td class="text-center d-none d-sm-table-cell">20%</td>
+                        <td class="text-center">
+                          <span class="badge text-bg-warning text-light"
+                            >process</span
+                          >
+                        </td>
+                        <td class="text-center">
+                          <button class="btn btn-outline-secondary px-2">
+                            <i class="bi bi-pencil-square"></i>
+                          </button>
+                          <button class="btn btn-outline-secondary px-2">
+                            <i class="bi bi-trash3-fill"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <!-- end riga 3 -->
+
+                      <!-- Riga 4 -->
+                      <tr>
+                        <td scope="row d-flex align-items-center">
+                          <i
+                            class="bi bi-code-slash bg-danger rounded-circle fs-5 p-1 me-2 text-light"
+                          ></i>
+                          <span>Classe 78</span>
+                        </td>
+                        <td class="text-center d-none d-md-table-cell">
+                          18 Feb 2021
+                        </td>
+                        <td class="text-center d-none d-sm-table-cell">20%</td>
+                        <td class="text-center">
+                          <span class="badge text-bg-success">Done</span>
+                        </td>
+                        <td class="text-center">
+                          <button class="btn btn-outline-secondary px-2">
+                            <i class="bi bi-pencil-square"></i>
+                          </button>
+                          <button class="btn btn-outline-secondary px-2">
+                            <i class="bi bi-trash3-fill"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <!-- end riga 4 -->
+
+                      <!-- Riga 5 -->
+                      <tr>
+                        <td scope="row d-flex align-items-center">
+                          <i
+                            class="bi bi-code-slash bg-danger rounded-circle fs-5 p-1 me-2 text-light"
+                          ></i>
+                          <span>Classe 79</span>
+                        </td>
+                        <td class="text-center d-none d-md-table-cell">
+                          19 Feb 2021
+                        </td>
+                        <td class="text-center d-none d-sm-table-cell">20%</td>
+                        <td class="text-center">
+                          <span class="badge text-bg-danger">failed</span>
+                        </td>
+                        <td class="text-center">
+                          <button class="btn btn-outline-secondary px-2">
+                            <i class="bi bi-pencil-square"></i>
+                          </button>
+                          <button class="btn btn-outline-secondary px-2">
+                            <i class="bi bi-trash3-fill"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <!-- end riga 5 -->
+
+                      <!-- Riga 6 -->
+                      <tr>
+                        <td scope="row d-flex align-items-center">
+                          <i
+                            class="bi bi-code-slash bg-danger rounded-circle fs-5 p-1 me-2 text-light"
+                          ></i>
+                          <span>Classe 80</span>
+                        </td>
+                        <td class="text-center d-none d-md-table-cell">
+                          20 Feb 2021
+                        </td>
+                        <td class="text-center d-none d-sm-table-cell">20%</td>
+                        <td class="text-center">
+                          <span class="badge text-bg-success">Done</span>
+                        </td>
+                        <td class="text-center">
+                          <button class="btn btn-outline-secondary px-2">
+                            <i class="bi bi-pencil-square"></i>
+                          </button>
+                          <button class="btn btn-outline-secondary px-2">
+                            <i class="bi bi-trash3-fill"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <!-- end riga 6 -->
+
+                      <!-- Riga 7 -->
+                      <tr>
+                        <td scope="row d-flex align-items-center">
+                          <i
+                            class="bi bi-code-slash bg-danger rounded-circle fs-5 p-1 me-2 text-light"
+                          ></i>
+                          <span>Classe 81</span>
+                        </td>
+                        <td class="text-center d-none d-md-table-cell">
+                          21 Feb 2021
+                        </td>
+                        <td class="text-center d-none d-sm-table-cell">20%</td>
+                        <td class="text-center">
+                          <span class="badge text-bg-danger">failed</span>
+                        </td>
+                        <td class="text-center">
+                          <button class="btn btn-outline-secondary px-2">
+                            <i class="bi bi-pencil-square"></i>
+                          </button>
+                          <button class="btn btn-outline-secondary px-2">
+                            <i class="bi bi-trash3-fill"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <!-- end riga 7 -->
+
+                      <!-- Riga 8 -->
+                      <tr>
+                        <td scope="row d-flex align-items-center">
+                          <i
+                            class="bi bi-code-slash bg-danger rounded-circle fs-5 p-1 me-2 text-light"
+                          ></i>
+                          <span>Classe 82</span>
+                        </td>
+                        <td class="text-center d-none d-md-table-cell">
+                          22 Feb 2021
+                        </td>
+                        <td class="text-center d-none d-sm-table-cell">20%</td>
+                        <td class="text-center">
+                          <span class="badge text-bg-success">Done</span>
+                        </td>
+                        <td class="text-center">
+                          <button class="btn btn-outline-secondary px-2">
+                            <i class="bi bi-pencil-square"></i>
+                          </button>
+                          <button class="btn btn-outline-secondary px-2">
+                            <i class="bi bi-trash3-fill"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <!-- end riga 8 -->
+                    </tbody>
+                    <!-- end table body -->
+                  </table>
+                </div>
               </div>
               <!-- fine prossime classi -->
 
               <!-- faq -->
               <div class="card">
                 <div class="card-header fs-4">F.A.Q.</div>
-                <div class="card-body"></div>
+                <div class="card-body">
+                  <div class="accordion" id="accordionFAQ">
+                    <div
+                      class="accordion-item border-top-0 border-start-0 border-end-0 rounded-0"
+                    >
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          Come aggiungere un nuovo studente?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseOne"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFAQ"
+                      >
+                        <div class="accordion-body">
+                          Clicca sul + in alto nella sezione blu.*
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="accordion-item border-top-0 border-start-0 border-end-0 rounded-0"
+                    >
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          Come posso accedere alle informazioni del mio account?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFAQ"
+                      >
+                        <div class="accordion-body">
+                          Clicca sull'icona della campanella.
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="accordion-item border-top-0 border-start-0 border-end-0 rounded-0"
+                    >
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                        >
+                          Posso usare questa dashboard da mobile?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFAQ"
+                      >
+                        <div class="accordion-body">Si.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- fine faq -->
             </div>
