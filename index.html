@@ -157,7 +157,38 @@
               <h2 class="fs-6 fw-semibold text-capitalize me-3">
                 nuovo studente
               </h2>
-              <button class="btn btn-outline-light fs-4 py-0">+</button>
+              <!-- offcanvas -->
+              <button
+                class="btn btn-outline-light fs-4 py-0"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+              >
+                +
+              </button>
+
+              <!-- offcanvas content -->
+              <div
+                class="offcanvas offcanvas-end offcanvas_width_custom"
+                tabindex="-1"
+                id="offcanvasRight"
+                aria-labelledby="offcanvasForm"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasForm">
+                    Offcanvas right
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">...</div>
+              </div>
+              <!-- end offcanvas content -->
+              <!-- end offcanvas -->
             </div>
             <!-- fine nuovo studente -->
 

@@ -70,10 +70,18 @@
   background-color: #f26551;
 }
 
+#main .offcanvas.offcanvas_width_custom {
+  width: 100%;
+}
+
 /* MEDIA QUERY */
 
 @media screen and (min-width: 992px) {
   :root {
     --left-nav-bar-width: 150px;
+  }
+
+  #main .offcanvas.offcanvas_width_custom {
+    width: 50%;
   }
 }
