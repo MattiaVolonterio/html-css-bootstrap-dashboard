@@ -61,6 +61,15 @@
   height: calc(100vh - var(--header-height));
 }
 
+.table_icon {
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  background-color: #f26551;
+}
+
 /* MEDIA QUERY */
 
 @media screen and (min-width: 992px) {
