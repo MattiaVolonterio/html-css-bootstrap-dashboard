@@ -22,7 +22,91 @@
     <!-- Link Css -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
+
   <body>
+    <!-- HEADER -->
+    <header id="header">
+      <nav class="navbar navbar-expand bg-body-tertiary">
+        <div
+          class="container-fluid d-flex align-items-center justify-content-between"
+        >
+          <!-- navbar logo -->
+          <div>
+            <!-- logo small -->
+            <img
+              src="./img/mobile-logo.png"
+              alt="boolean logo small"
+              class="header_logo_container img-fluid d-lg-none me-4"
+            />
+            <!-- end logo small -->
+            <!-- logo large -->
+            <img
+              src="./img/logo.svg"
+              alt="boolean logo large"
+              class="img-fluid d-none d-lg-block me-3"
+            />
+            <!-- end logo large -->
+          </div>
+          <!-- end navbar logo -->
+
+          <!-- nav bar search -->
+          <div class="form-group flex-fill">
+            <form class="d-flex flex-grow-1" role="search">
+              <i class="bi bi-search form-control-feedback"></i>
+              <input
+                class="form-control me-2 bg-secondary-custom"
+                type="search"
+                placeholder="Prova a cercare: Lezioni di laravel"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+          <!-- end navbar search -->
+
+          <!-- nav bar icon -->
+          <ul class="navbar-nav fs-5">
+            <li class="nav-item d-none d-lg-block">
+              <a class="nav-link active" aria-current="page" href="#"
+                ><i class="bi bi-list-task"></i
+              ></a>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <a class="nav-link" href="#"
+                ><i class="bi bi-question-circle-fill"></i
+              ></a>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <a class="nav-link" href="#"
+                ><i class="bi bi-three-dots-vertical"></i
+              ></a>
+            </li>
+            <!-- icon dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-warning"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-bell-fill"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Profilo</a></li>
+                <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Logout</a>
+                </li>
+              </ul>
+            </li>
+            <!-- end icon dropdown -->
+          </ul>
+          <!-- end navbar icon -->
+        </div>
+      </nav>
+    </header>
+    <!-- END HEADER -->
+
     <!-- Script Bootsrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
