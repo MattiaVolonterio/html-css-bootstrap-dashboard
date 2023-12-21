@@ -46,7 +46,7 @@
 
 #header {
   background: white;
-  background: linear-gradient(to right, white, lightgrey);
+  background: linear-gradient(to right, white, rgba(217, 217, 217, 0.832));
 }
 
 /* ## MAIN */
