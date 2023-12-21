@@ -70,6 +70,10 @@ button.button_width {
   height: calc(100vh - var(--header-height));
 }
 
+.table_cell_name_width {
+  width: 50%;
+}
+
 .table_line_height {
   line-height: 35px;
 }
