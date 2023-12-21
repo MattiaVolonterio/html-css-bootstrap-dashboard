@@ -186,19 +186,146 @@
                   ></button>
                 </div>
                 <div class="offcanvas-body">
-                  <div class="row">
-                    <div class="col-12 col-lg-6">Nome</div>
-                    <div class="col-12 col-lg-6">Cognome</div>
-                    <div class="col-12 col-lg-6">Email</div>
-                    <div class="col-12 col-lg-6">Password</div>
-                    <div class="col-12 col-lg-6">Ripeti Email</div>
-                    <div class="col-12 col-lg-6">Ripeti Password</div>
-                    <div class="col-12">Indirizzo</div>
-                    <div class="col-12 col-lg-6">Citta</div>
-                    <div class="col-12 col-lg-4">Stato</div>
-                    <div class="col-12 col-lg-2">Cap</div>
-                    <div class="col-12">Foto</div>
-                  </div>
+                  <!-- Form -->
+                  <form
+                    action="https://learning.tizianonicolai.com/request-catcher/"
+                    method="post"
+                    target="_blank"
+                  >
+                    <div class="row g-3">
+                      <!-- Nome -->
+                      <div class="col-12 col-lg-6">
+                        <label for="input-name" class="form-label">Nome</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="Nome"
+                          id="input-name"
+                        />
+                      </div>
+                      <!-- end nome -->
+
+                      <!-- cognome -->
+                      <div class="col-12 col-lg-6">
+                        <label for="input-surname" class="form-label"
+                          >Cognome</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="Cognome"
+                          id="input-surname"
+                        />
+                      </div>
+                      <!-- end cognome -->
+
+                      <!-- Email -->
+                      <div class="col-12 col-lg-6">
+                        <label for="input-email" class="form-label"
+                          >Email</label
+                        >
+                        <div class="input-group">
+                          <span class="input-group-text" id="basic-addon1"
+                            >@</span
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="input-email"
+                            name="email"
+                            aria-label="Email"
+                            aria-describedby="basic-addon1"
+                          />
+                        </div>
+                      </div>
+                      <!-- fine email -->
+
+                      <!-- password -->
+                      <div class="col-12 col-lg-6">
+                        <label for="input-password" class="form-label"
+                          >Password</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control"
+                          name="Password"
+                          id="input-password"
+                          minlength="8"
+                          maxlength="10"
+                          autocomplete="off"
+                        />
+                      </div>
+                      <!-- fine password -->
+
+                      <!-- ripeti email -->
+                      <div class="col-12 col-lg-6">
+                        <label for="input-email-repeat" class="form-label"
+                          >Rpeti Email</label
+                        >
+                        <div class="input-group">
+                          <span class="input-group-text" id="basic-addon1"
+                            >@</span
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="input-email-repeat"
+                            name="email-repeat"
+                            aria-label="Email"
+                            aria-describedby="basic-addon1"
+                          />
+                        </div>
+                      </div>
+                      <!-- fine ripeti email -->
+
+                      <!-- ripeti password -->
+                      <div class="col-12 col-lg-6">
+                        <label for="input-password-repeated" class="form-label"
+                          >Ripeti Password</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control"
+                          name="Password Repeated"
+                          id="input-password-repeated"
+                          minlength="8"
+                          maxlength="10"
+                          autocomplete="off"
+                        />
+                      </div>
+                      <!-- fine ripeti password -->
+
+                      <!-- indirizzo -->
+                      <div class="col-12">
+                        <label for="input-address" class="form-label"
+                          >Indirizzo</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="Address"
+                          id="input-address"
+                        />
+                      </div>
+                      <!-- fine indirizzo -->
+
+                      <!-- città -->
+                      <div class="col-12 col-lg-6">
+                        <label for="input-city" class="form-label">Città</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="City"
+                          id="input-city"
+                        />
+                      </div>
+                      <!-- fine città -->
+                      <div class="col-12 col-lg-4">Stato</div>
+                      <div class="col-12 col-lg-2">Cap</div>
+                      <div class="col-12">Foto</div>
+                    </div>
+                  </form>
+                  <!-- end form -->
                 </div>
               </div>
               <!-- end offcanvas content -->
@@ -276,11 +403,11 @@
               <div class="card mb-3">
                 <div class="card-header fs-4">Prossime Classi</div>
                 <div class="card-body">
-                  <table class="table">
+                  <table class="table table_line_height">
                     <!-- table head -->
                     <thead>
                       <tr>
-                        <td scope="col" class="w-50">Nome</td>
+                        <td scope="col" class="table_cell_name_width">Nome</td>
                         <td
                           scope="col"
                           class="text-center d-none d-md-table-cell"

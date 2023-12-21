@@ -61,11 +61,14 @@
   height: calc(100vh - var(--header-height));
 }
 
+.table_line_height {
+  line-height: 35px;
+}
+
 .table_icon {
   text-align: center;
   width: 35px;
   height: 35px;
-  line-height: 35px;
   border-radius: 50%;
   background-color: #f26551;
 }
@@ -76,12 +79,28 @@
 
 /* MEDIA QUERY */
 
+@media screen and (min-width: 576px) {
+  .table_cell_name_width {
+    width: 48%;
+  }
+}
+
 @media screen and (min-width: 992px) {
   :root {
     --left-nav-bar-width: 150px;
   }
 
   #main .offcanvas.offcanvas_width_custom {
+    width: 50%;
+  }
+
+  .table_cell_name_width {
+    width: 36%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .table_cell_name_width {
     width: 50%;
   }
 }
