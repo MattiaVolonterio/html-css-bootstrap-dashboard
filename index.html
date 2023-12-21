@@ -121,26 +121,34 @@
       <!-- LEFT NAVBAR -->
       <nav id="left-navbar" class="d-flex flex-column align-items-center py-4">
         <!-- button home -->
-        <button class="btn btn-outline-light border-0 rounded-0 mb-3 p-1">
-          <i class="bi bi-house-door-fill fs-4 me-lg-3"></i>
+        <button
+          class="btn btn-outline-light button_width border-0 rounded-0 mb-3 p-1"
+        >
+          <i class="bi bi-house-door-fill fs-4"></i>
           <span class="d-none d-lg-inline-block">Home</span>
         </button>
         <!-- end button home -->
         <!-- button stats -->
-        <button class="btn btn-outline-light border-0 rounded-0 mb-3 p-1">
-          <i class="fa-solid fa-chart-simple fs-4 me-lg-3"></i>
+        <button
+          class="btn btn-outline-light button_width border-0 rounded-0 mb-3 p-1"
+        >
+          <i class="fa-solid fa-chart-simple fs-4"></i>
           <span class="d-none d-lg-inline-block">Stats</span>
         </button>
         <!-- end button stats -->
         <!-- button signals -->
-        <button class="btn btn-outline-light border-0 rounded-0 mb-3 p-1">
-          <i class="fa-solid fa-signal fs-5 me-lg-3"></i>
+        <button
+          class="btn btn-outline-light button_width border-0 rounded-0 mb-3 p-1"
+        >
+          <i class="fa-solid fa-signal fs-5"></i>
           <span class="d-none d-lg-inline-block">Signal</span>
         </button>
         <!-- end button signal -->
         <!-- button admin -->
-        <button class="btn btn-outline-light border-0 rounded-0 p-1 mt-auto">
-          <i class="bi bi-gear-fill fs-4 me-lg-3"></i>
+        <button
+          class="btn btn-outline-light button_width border-0 rounded-0 p-1 mt-auto"
+        >
+          <i class="bi bi-gear-fill fs-4"></i>
           <span class="d-none d-lg-inline-block">Admin</span>
         </button>
         <!-- end button admin -->
@@ -320,9 +328,76 @@
                         />
                       </div>
                       <!-- fine città -->
-                      <div class="col-12 col-lg-4">Stato</div>
-                      <div class="col-12 col-lg-2">Cap</div>
-                      <div class="col-12">Foto</div>
+
+                      <!-- stato -->
+                      <div class="col-12 col-lg-4">
+                        <label class="form-label" for="inputGroupSelect"
+                          >Stato</label
+                        >
+                        <select
+                          class="form-select"
+                          name="Stato"
+                          id="inputGroupSelect"
+                        >
+                          <option selected>Scegli...</option>
+                          <option value="Italia">Italia</option>
+                          <option value="Spagna">spagna</option>
+                          <option value="Francia">Francia</option>
+                        </select>
+                      </div>
+                      <!-- fine stato -->
+
+                      <!-- cap -->
+                      <div class="col-12 col-lg-2">
+                        <label for="input-cap" class="form-label">Cap</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="Cap"
+                          id="input-cap"
+                        />
+                      </div>
+                      <!-- fine cap -->
+
+                      <!-- foto -->
+                      <div class="col-12">
+                        <label for="input-file" class="form-label">Foto</label>
+                        <input
+                          type="file"
+                          class="form-control"
+                          name="File"
+                          id="input-file"
+                          aria-describedby="inputGroupFileAddon04"
+                          aria-label="Upload"
+                        />
+                      </div>
+                      <!-- fine foto -->
+
+                      <!-- checkbox -->
+                      <div class="col-12">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="continue"
+                          required
+                        />
+                        <label class="form-check-label" for="continue">
+                          Seleziona per proseguire
+                        </label>
+                      </div>
+                      <!-- fine checkbox -->
+
+                      <!-- buttons -->
+                      <div class="col-12">
+                        <button type="submit" class="btn btn-primary">
+                          Salva
+                        </button>
+                        <button type="reset" class="btn btn-warning">
+                          Svuota
+                        </button>
+                      </div>
+                      <!-- fine buttons -->
                     </div>
                   </form>
                   <!-- end form -->

@@ -56,6 +56,10 @@
   background-repeat: no-repeat;
 }
 
+button.button_width {
+  width: auto;
+}
+
 #main {
   width: calc(100% - var(--left-nav-bar-width));
   height: calc(100vh - var(--header-height));
@@ -88,6 +92,16 @@
 @media screen and (min-width: 992px) {
   :root {
     --left-nav-bar-width: 150px;
+  }
+
+  button.button_width {
+    width: 70%;
+    display: flex;
+    align-items: center;
+  }
+
+  button.button_width > span {
+    width: 60%;
   }
 
   #main .offcanvas.offcanvas_width_custom {
