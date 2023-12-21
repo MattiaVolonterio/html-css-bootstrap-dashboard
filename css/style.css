@@ -44,6 +44,11 @@
   padding-left: 2.375rem;
 }
 
+#header {
+  background: white;
+  background: linear-gradient(to right, white, lightgrey);
+}
+
 /* ## MAIN */
 
 #left-navbar {
