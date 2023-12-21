@@ -84,6 +84,9 @@ button.button_width {
 
 #main .offcanvas.offcanvas_width_custom {
   width: 100%;
+
+  background: white;
+  background: linear-gradient(to right top, white, lightgrey);
 }
 
 /* MEDIA QUERY */
