@@ -90,7 +90,12 @@ button.button_width {
   width: 100%;
 
   background: white;
-  background: linear-gradient(to right top, white, lightgrey);
+  background: linear-gradient(
+    to right top,
+    white,
+    rgb(103, 219, 25),
+    rgb(30, 206, 203)
+  );
 }
 
 /* MEDIA QUERY */
